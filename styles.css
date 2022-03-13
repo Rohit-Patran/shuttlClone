@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Epilogue:wght@300&family=Poppins:wght@200;300&family=Sora:wght@900&display=swap');
+:root{
+    --theme-color:#95d4dc;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: var(--theme-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-burger{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 8%;
+    display: none;
+    flex-direction: column;
+    row-gap: 5px;
+    outline: none;
+    border: none;
+}
+
+.nav-burger .bar{
+    background-color: white;
+    height: 3px;
+}
+
+.logo{
+    width: 9%;
+}
+
+.nav-links
+{
+    width: 50%;
+    display: flex;
+    column-gap: 5%;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.9vw;
+    padding: 0.7vw;
+}
+
+.links:hover{
+    background-color: #20aeb6;
+}
+
+.intro-image{
+    width: 100%;
+}
+
+.intro-description
+{
+    background-color:#ffcc1c;
+    margin: -0.5% 0 0 0;
+    display: flex;
+    position: relative;
+}
+
+.intro-title{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 10vw;
+    padding: 1%;
+    font-family: 'Sora', sans-serif;
+    font-size: 3vw;
+}
+
+.app-download-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    position: absolute;
+    right:20%;
+    top: -35%;
+}
+.download-link{
+    width: 30%;
+    text-align: center;
+}
+
+.google-play{
+    width: 100%;
+}
+
+.appstore{
+    width: 80%;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vw;
+}
+
+.features-heading{
+    background-color: red;
+    width: fit-content;
+    padding: 1vw 2vw;
+    margin-top: 1.5vw;
+    font-family: 'Sora', sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    background-color: #20aeb6;
+    color: white;
+    border-radius: 1vw;
+}
+
+.features-content
+{
+    display: flex;
+    justify-content: center;
+    column-gap: 1vw;
+    border-bottom: solid 0.8vw #ffcc1c;
+}
+
+.feature-image{
+    width: 20%;
+    margin-bottom:-0.05%;
+}
+
+.benefits
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits-heading{
+    width: fit-content;
+    background-color: #20aeb6;
+    font-family: 'Sora', sans-serif;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    color: white;
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 5vw 0 2vw;
+}
+
+
+.benefits-content
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    margin-bottom: 1vw;
+    flex-wrap: wrap;
+}
+
+.benefit-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-desc{
+    font-family: 'Sora',sans-serif;
+}
+
+.benefit-image
+{
+    width: 30%;
+}
+
+
+.media-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #95d4dc;
+}
+.media-heading
+{
+    width: fit-content;
+    background-color: #20aeb6;
+    font-family: 'Sora', sans-serif;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    color: white;
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 2vw 0 2vw;
+}
+
+.media-items{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(5vw,auto));
+    column-gap: 2vw;
+    row-gap: 2vw;
+    place-items: center;
+    margin-bottom: 3vw;
+}
+
+.comapny-image{
+    width: 70%;
+}
+
+.contact
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5vw;
+}
+
+.contact-links{
+    display: grid;
+    grid-template-columns: repeat(4,15vw);
+    column-gap: 2vw;
+}
+
+.column-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Sora',sans-serif;
+    row-gap: 1vw;
+    font-size: 0.7vw;
+}
+.column-1 img{
+    width: 50%;
+}
+.column-1 a{
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+    border: 0;
+    border-bottom: solid 1px rgb(235, 234, 234);
+    padding: 1vw 2vw 1vw;
+    font-weight: bold;
+}
+
+.column-1 a:hover{
+    background-color: lightgrey;
+}
+
+.column-2{
+    font-family: 'Sora',sans-serif;
+    color: darkgray;
+    font-size: 1vw;
+}
+
+.column-3{
+    font-size: 1vw;
+    font-family: 'Sora',sans-serif;
+    color: darkgray;
+}
+
+.column-4{
+    font-size: 1vw;
+    font-family: 'Sora',sans-serif;
+    color: darkgray;
+}
+
+.head{
+    color: rgb(129, 129, 129);
+    margin-bottom: 0%;
+}
+
+hr{
+    width: 60%;
+    border: 0;
+    border-bottom: solid 2px rgb(235, 234, 234);
+}
+
+.end{
+    font-family: 'Sora',sans-serif;
+    font-size: 1vw;
+    color: darkgray;
+    text-align: center;
+}
+
+
+@media screen and (max-width:769px) {
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-burger{
+        display: flex;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 15vw;
+        background-color: white;
+        height: 30vh;
+        z-index: 2;
+    }
+
+    .nav-links a{
+        color: black;
+    }
+
+    .active{
+        display: flex;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .links{
+        font-size: 4vw;
+    }
+    .intro-description{
+        margin: -1.5% 0 0 0;
+    }
+    .intro-title{
+        font-size: 4vw;
+    }
+
+    .app-download-links{
+        right: 2%;
+    }
+    .download-link{
+        width: 50%;
+    }
+
+    .features-heading{
+        font-size: 4vw;
+    }
+
+    .features-content{
+        flex-wrap: wrap;
+        border-bottom: 0;
+    }
+    .feature-image{
+        width: 35%;
+        border-bottom: solid 1vw #ffcc1c;
+    }
+    .benefits-heading{
+        font-size: 4vw;
+    }
+    .benefits-content{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(3,auto);
+        place-items: center;
+    }
+
+    .media-heading{
+        font-size: 4vw;
+    }
+    .media-items{
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(3,auto);
+    }
+    .contact-links{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(4,auto);
+        text-align: center;
+    }
+
+    .column-1{
+        font-size: 4vw;
+    }
+
+    .column-1 img{
+        margin-bottom: 5vw;
+    }
+    .column-2{
+        font-size: 4vw;
+    }
+    .column-3{
+        font-size: 4vw;
+    }
+    .column-4{
+        font-size: 4vw;
+    }
+    .end{
+        font-size: 4vw;
+    }
+}
